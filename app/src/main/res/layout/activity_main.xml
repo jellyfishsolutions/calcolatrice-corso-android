@@ -14,6 +14,7 @@
         android:layout_height="100dp">
 
         <TextView
+            android:id="@+id/display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|right"
@@ -38,6 +39,7 @@
             android:weightSum="4">
 
             <Button
+                android:onClick="ac"
                 android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -46,6 +48,7 @@
                 android:text="AC" />
 
             <Button
+                android:onClick="sign"
                 android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -54,6 +57,7 @@
                 android:text="+/-" />
 
             <Button
+                android:onClick="percent"
                 android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -61,6 +65,7 @@
                 android:backgroundTint="@color/yellow"
                 android:text="%" />
             <Button
+                android:onClick="division"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -77,6 +82,7 @@
             android:weightSum="4">
 
             <Button
+                android:onClick="on7"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -85,6 +91,7 @@
                 android:backgroundTint="@color/snow"/>
 
             <Button
+                android:onClick="on8"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -93,6 +100,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="on9"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -101,6 +109,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="multiply"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -117,6 +126,7 @@
             android:weightSum="4">
 
             <Button
+                android:onClick="on4"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -125,6 +135,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="on5"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -133,6 +144,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="on6"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -141,6 +153,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="subtraction"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -157,6 +170,7 @@
             android:weightSum="4">
 
             <Button
+                android:onClick="on1"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -165,6 +179,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="on2"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -173,6 +188,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="on3"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -181,6 +197,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="addition"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -197,6 +214,7 @@
             android:weightSum="4">
 
             <Button
+                android:onClick="on0"
 				android:layout_margin="3dp"
                 android:layout_marginRight="2dp"
                 android:layout_width="0dp"
@@ -207,6 +225,7 @@
 
 
             <Button
+                android:onClick="onComma"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -215,6 +234,7 @@
                 android:backgroundTint="@color/snow" />
 
             <Button
+                android:onClick="result"
 				android:layout_margin="3dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
