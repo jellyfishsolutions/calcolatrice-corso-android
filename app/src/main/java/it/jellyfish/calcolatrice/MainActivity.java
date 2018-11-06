@@ -1,5 +1,7 @@
 package it.jellyfish.calcolatrice;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +26,35 @@ public class MainActivity extends AppCompatActivity {
         display = findViewById(R.id.display);
 
         calculator = new Calculator();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+
+
+        SharedPreferences sharedPref = this.getSharedPreferences("display", Context.MODE_PRIVATE);
+        String oldValue = sharedPref.getString("display", "0");
+
+
+        display.setText(oldValue);
+        parseAndSetDisplay();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+
+        SharedPreferences sharedPref = this.getSharedPreferences("display", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("display", display.getText().toString());
+        editor.commit();
+
+
+        
+
     }
 
     void pressed(int number) {
