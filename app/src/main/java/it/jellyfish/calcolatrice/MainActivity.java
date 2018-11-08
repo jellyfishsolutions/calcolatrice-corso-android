@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        SharedPreferences sharedPref = this.getSharedPreferences("display", Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = this.getSharedPreferences("preferences", Context.MODE_PRIVATE);
         String oldValue = sharedPref.getString("display", "0");
 
 
@@ -46,14 +46,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
 
-
-        SharedPreferences sharedPref = this.getSharedPreferences("display", Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = this.getSharedPreferences("preferences", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("display", display.getText().toString());
         editor.commit();
 
-
-        
 
     }
 
